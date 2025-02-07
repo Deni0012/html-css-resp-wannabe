@@ -130,74 +130,115 @@ img {
  
  /* MEDIA QUERIES */
 
- /* MEDIA QUERIES DESKTOP */
- @media (max-width: 1160px) {
-     .container {
-         width: 90%;
-     }
+/* Media Queries Desktop tra 1160px e 768px */
 
-     .plan-container {
-         flex-wrap: wrap;
-         justify-content: center;
-     }
- }
+@media (max-width: 1160px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+    }
 
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
- @media (min-width: 769px) {
-     .steps {
-         background-attachment: fixed;
-     }
- }
+    .col {
+        padding: 0.5rem;
+    }
 
- @media (max-width: 768px) {
-     .steps {
-         background-attachment: scroll;
-     }
- }
+    .why-us .col-left {
+        width: 50%;
+    }
 
- /* MEDIA QUERIES TABLET */
-
- @media (max-width: 768px) {
-     .plan-container {
-         flex-direction: column;
-         align-items: center;
-     }
-
-     .plan {
-         width: 80%;
-     }
-
-     nav ul {
-         flex-direction: column;
-         gap: 10px;
-     }
+    .why-us .col-right {
+        width: 50%;
+    }
 }
 
- /* MEDIA QUERIES MOBILE */
+/* Media Queries Tablet: max 768px */
 
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  @media (max-width: 480px) {
-      header {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-      }
+    .site-header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-      .buttons {
-          margin-top: 10px;
-      }
+    .lessons .col,
+    .steps .col {
+        width: 80%;
+        text-align: center;
+    }
 
-      .hero {
-          padding: 30px;
-      }
+    /* Background-color pink adattata */
 
-      .hero h1 {
-          font-size: 1.5em;
-      }
+    .steps {
+        padding: 2rem 0;
+    }
 
-      .plan {
-          width: 100%;
-      }
-      
+    .why-us .row {
+        flex-direction: column;
+    }
+
+    .why-us .col-left,
+    .why-us .col-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .why-us .col-left img {
+        max-width: 80%;
+    }
+}
+
+/* Media Queries Mobile: max 480px */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .site-header h1 {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .steps {
+        padding: 2rem 0;
+    }
+
+    .lessons .col,
+    .steps .col {
+        width: 100%;
+    }
+
+    .lessons .col img,
+    .steps .col img {
+        height: 150px;
+    }
+
+    .why-us .col-left img {
+        max-width: 100%;
+    }
+
+    .why-us ul {
+        padding: 0;
+    }
 }
 
