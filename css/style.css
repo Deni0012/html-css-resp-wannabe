@@ -181,6 +181,38 @@ img {
         padding: 2rem 0;
     }
 
+    .lessons .row {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .lessons .col {
+        width: 45%;
+        text-align: center;
+    }
+
+    .lessons .col img {
+        display: block;
+        margin: 0;
+    }
+
+    .steps .row {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .steps .col {
+        width: 30%;
+        text-align: center;
+    }
+
+    .step .col img {
+        display: block;
+        margin: 0 auto;
+    }
+
     .why-us .row {
         flex-direction: row;
         align-items: center;
